@@ -13,7 +13,6 @@ function App() {
       <GlobalStyle />
 
       <Nav />
-
       <Switch>
         <Route path="/" exact>
           <AboutUs />
