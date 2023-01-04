@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-
       <Nav />
       <AnimatePresence mode="wait">
         <Switch location={location} key={location.pathname}>

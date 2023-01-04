@@ -5,11 +5,12 @@ import { MovieState } from "../movieState";
 // ANIMATIONS
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
+  const [movies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
   //   USE EFFECT
   useEffect(() => {
@@ -41,6 +42,7 @@ const MovieDetail = () => {
           <ImageDisplay>
             <img src={movie.secondaryImg} alt="secondaryimage" />
           </ImageDisplay>
+          <ScrollTop />
         </Details>
       )}
     </>
